@@ -137,7 +137,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aHM-2g-QjH"/>
-                                            <segue destination="HAx-IK-9tB" kind="show" id="gQ9-FL-ulB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -189,12 +188,15 @@
                     <connections>
                         <outlet property="buttonLogin" destination="CVB-GI-2wr" id="AvJ-sh-Gof"/>
                         <outlet property="buttonSignUp" destination="gPj-Xb-uJF" id="fZi-Ka-whM"/>
-                        <outlet property="lineEmail" destination="gtx-Al-mG2" id="lbn-rH-UEF"/>
-                        <outlet property="linePassword" destination="4Xx-zF-Pw5" id="H6Z-nf-XJ9"/>
+                        <outlet property="imageEmail" destination="IUk-fW-U6t" id="nti-Ly-zh6"/>
+                        <outlet property="imagePassword" destination="h6S-lv-Bm4" id="yye-Lf-ftW"/>
+                        <outlet property="lineEmail" destination="A8X-BM-peH" id="HUQ-mp-aKW"/>
+                        <outlet property="linePassword" destination="bKr-ck-0bt" id="fda-0H-QlR"/>
                         <outlet property="mainLogo" destination="ZxF-2v-m7c" id="OaT-Hd-Vfh"/>
                         <outlet property="questionSignUpLabel" destination="ke8-gh-P3O" id="LWX-8z-iui"/>
                         <outlet property="textFieldEmail" destination="6sY-4H-7OM" id="cmU-Lt-BQM"/>
                         <outlet property="textFieldPassword" destination="V6a-AV-Ag9" id="vDw-tk-UzP"/>
+                        <segue destination="HAx-IK-9tB" kind="show" identifier="goToHomePage" id="e73-Qs-pKU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

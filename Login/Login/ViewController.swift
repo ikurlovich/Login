@@ -23,16 +23,14 @@ class ViewController: UIViewController {
     // MARK: IBOutlets -
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    
-    @IBOutlet weak var lineEmail: NSLayoutConstraint!
-    @IBOutlet weak var linePassword: NSLayoutConstraint!
-    
+    @IBOutlet weak var lineEmail: UIView!
+    @IBOutlet weak var linePassword: UIView!
     @IBOutlet weak var buttonLogin: UIButton!
     @IBOutlet weak var buttonSignUp: UIButton!
-    
     @IBOutlet weak var questionSignUpLabel: UILabel!
-    
     @IBOutlet weak var mainLogo: UIImageView!
+    @IBOutlet weak var imageEmail: UIImageView!
+    @IBOutlet weak var imagePassword: UIImageView!
     // MARK: Properties -
     
     // MARK: Life cycle -
@@ -50,6 +48,7 @@ class ViewController: UIViewController {
     }
     // MARK: IBActions -
     @IBAction func loginAction(_ sender: Any) {
+        performSegue(withIdentifier: "goToHomePage", sender: sender)
     }
     
     @IBAction func signUpAction(_ sender: Any) {
@@ -63,9 +62,9 @@ class ViewController: UIViewController {
     }
     
     private func configureButtons() {
-        buttonLogin.layer.shadowColor = UIColor.systemMint.cgColor
-        buttonLogin.layer.shadowOffset = CGSize(width:  0, height: 3)
-        buttonLogin.layer.shadowOpacity = 0.2
+        buttonLogin.layer.shadowColor = (UIColor(named: "ColorLoginBotton") ?? UIColor.gray).cgColor
+        buttonLogin.layer.shadowOffset = CGSize(width:  0, height: 5)
+        buttonLogin.layer.shadowOpacity = 0.4
         buttonLogin.layer.shadowRadius = 5
     }
     
